@@ -1,0 +1,79 @@
+:host {
+  font-family: Lato;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100%;
+}
+section.debug {
+  border: none;
+  padding: 15px;
+}
+.header {
+  padding-bottom: 8px;
+}
+button {
+  margin-top: 30px;
+}
+.label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+.value {
+  display: inline;
+  opacity: 0.72;
+}
+.outer-panel {
+  border: 2px solid red;
+  padding: 8px;
+}
+.notifications-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(0);
+  border: 2px solid gray;
+  width: 200px;
+  background: #eee;
+
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  border: 1px solid red;
+}
+.test1,
+.test2 {
+  position: relative;
+}
+.test1 {
+  border-bottom: 8px solid #eee;
+}
+.test2 {
+  padding: 20px;
+}
+.tabs,
+.tabs section {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+.tabs section {
+  cursor: pointer;
+  padding: 8px;
+}
+.tabs section.selected {
+  border-bottom: 2px solid blue;
+}
+.tabs-content {
+  padding: 20px;
+}
